@@ -1,0 +1,44 @@
+{
+  "name": "modalab-api-main",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@algolia/client-search": "^5.12.0",
+    "@apollo/server": "^4.11.0",
+    "@getbrevo/brevo": "^2.2.0",
+    "@google-cloud/cloud-sql-connector": "^1.3.4",
+    "algoliasearch": "^5.12.0",
+    "apollo-server": "^3.13.0",
+    "apollo-server-cloud-functions": "^3.13.0",
+    "bcrypt": "^5.1.1",
+    "chalk": "^5.3.0",
+    "compression": "^1.7.4",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "graphql": "^16.9.0",
+    "graphql-request": "^7.1.2",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.4",
+    "pg": "^8.12.0",
+    "pg-hstore": "^2.3.4",
+    "pino": "^9.4.0",
+    "sequelize": "^6.37.3",
+    "stripe": "^17.4.0",
+    "uuid": "^10.0.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/uuid": "^10.0.0"
+  }
+}

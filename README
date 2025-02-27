@@ -1,0 +1,54 @@
+/modalab-api
+│
+├── /src
+│   ├── /config            # Configuración general (bases de datos, credenciales, etc.)
+│   │   ├── db.js          # Configuración de conexión a la base de datos
+│   │   └── apolloServer.js# Configuración de Apollo Server
+│   │
+│   ├── /graphql           # Esquemas y resolvers de GraphQL
+│   │   ├── /schemas
+│   │   │   ├── index.js   # Unir todos los esquemas
+│   │   │   └── product.js # Esquema de productos
+│   │   ├── /resolvers
+│   │   │   ├── index.js   # Unir todos los resolvers
+│   │   │   └── product.js # Resolver para productos
+│   │   └── /typedefs      # Definiciones de tipos (si quieres separar tipos en lugar de usar schemas)
+│   │
+│   ├── /services          # Lógica de negocio (servicios independientes)
+│   │   ├── productService.js # Lógica para manejo de productos
+│   │   ├── userService.js    # Lógica para usuarios
+│   │   └── orderService.js   # Lógica para pedidos
+│   │
+│   ├── /models            # Modelos de datos (para interactuar con la base de datos)
+│   │   ├── productModel.js # Modelo para productos
+│   │   ├── userModel.js    # Modelo para usuarios
+│   │   └── orderModel.js   # Modelo para pedidos
+│   │
+│   ├── /middlewares       # Middlewares de autenticación, logging, etc.
+│   │   └── authMiddleware.js # Middleware de autenticación JWT
+│   │
+│   ├── /routes            # Rutas (si decides tener algunas rutas REST o websockets)
+│   │   └── paymentRoutes.js  # Ruta REST para procesar pagos
+│   │
+│   ├── /utils             # Utilidades y funciones de ayuda
+│   │   ├── errorHandler.js # Manejador global de errores
+│   │   └── validator.js    # Validadores para las entradas del usuario
+│   │
+│   ├── /controllers       # Controladores (opcional si usas un patrón tipo MVC)
+│   │   └── productController.js # Controlador para manejar lógica de productos
+│   │
+│   └── index.js           # Archivo principal donde se inicia el servidor
+│
+├── /tests                 # Pruebas unitarias e integrales
+│   ├── product.test.js     # Pruebas para productos
+│   └── user.test.js        # Pruebas para usuarios
+│
+├── /scripts               # Scripts útiles para migraciones, seeds, etc.
+│   └── seedDatabase.js     # Script para poblar la base de datos con datos iniciales
+│
+├── /public                # Archivos estáticos (imágenes de productos, etc.)
+│
+├── .env                   # Variables de entorno
+├── .gitignore             # Para ignorar archivos innecesarios en git
+├── package.json           # Dependencias y scripts del proyecto
+└── README.md              # Documentación del proyecto
