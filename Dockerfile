@@ -14,10 +14,10 @@ RUN npm install --production
 COPY . .
 
 # Expone el puerto en el que tu app escucha
-EXPOSE 8080
+EXPOSE 5000
 
 # Configura la variable de entorno PORT
-ENV PORT 8080
+ENV PORT 5000
 
 # Comando para iniciar la aplicación
 CMD [ "npm", "start" ]
