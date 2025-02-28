@@ -52,6 +52,7 @@ const productResolvers = {
         ...(filters?.m_favorite !== undefined && {
           m_favorite: filters.m_favorite,
         }),
+        ...(filters?.ids && { id: { [Op.in]: filters.ids } }),
       });
 
       const createWholesalePriceFilter = (filters) => {

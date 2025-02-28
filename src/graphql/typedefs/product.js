@@ -159,6 +159,7 @@ const productTypeDefs = gql`
   }
 
   input FilterProductsInput {
+    ids: [ID!]
     designer_slug: [String!]
     collection: [String!]
     category: String
